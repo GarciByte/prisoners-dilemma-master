@@ -4,7 +4,7 @@ public class Noe extends Prisoner{
     public Noe()
     {
         lastPlay = null;
-        name = "TitForTat";
+        name = "Noe";
     }
 
     public Choice makePlay(Choice oppLastPlay) //opponent's last play

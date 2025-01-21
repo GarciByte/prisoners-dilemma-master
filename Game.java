@@ -16,7 +16,7 @@ public class Game
     
     public Game()
     {
-        prisoners = new Prisoner[7];
+        prisoners = new Prisoner[14];
         myJudger = new Judger();
         scoreboard = new int[prisoners.length];
         
@@ -24,18 +24,34 @@ public class Game
         Prisoner myJesus = new Jesus();
         Prisoner myRandomizer = new Randomizer();
         Prisoner myTitForTat = new TitForTat();
-        Prisoner myTitForTatModified = new Fernando();
         Prisoner friedman = new Friedman();
+        Prisoner fernando = new Fernando();
         Prisoner perroSanchez = new PerroSanchez();
-        prisoners = new Prisoner[7];
+        Prisoner cresenciano = new Cresenciano();
+        Prisoner manolo = new Manolo();
+        Prisoner manu = new Manu();
+        Prisoner noe = new Noe();
+        Prisoner pabloMotos = new PabloMotos();
+        Prisoner rokoBaturina = new RokoBaturina();
+        Prisoner zacarias = new Zacarias();
+
         prisoners[0] = mySatan;
         prisoners[1] = myJesus;
         prisoners[2] = myRandomizer;
         prisoners[3] = myTitForTat;
-        prisoners[4] = myTitForTatModified;
-        prisoners[5] = perroSanchez;
-        prisoners[6] = friedman;
-        //prisoners[7] = perroSanchez;
+        prisoners[4] = friedman;
+        prisoners[5] = fernando;
+        prisoners[6] = perroSanchez;
+        prisoners[7] = cresenciano;
+        prisoners[8] = manolo;
+        prisoners[9] = manu;
+        prisoners[10] = noe;
+        prisoners[11] = pabloMotos;
+        prisoners[12] = rokoBaturina;
+        prisoners[13] = zacarias;
+
+
+
     }
     
     public void cleanBoard()
@@ -57,9 +73,11 @@ public class Game
             for (int j = i+1; j < prisoners.length; j++)
             {
                 Prisoner prisoner1 = prisoners[i];
-                prisoner1.init();
+                prisoner1.setScore(0);
+                prisoner1.setLastPlay(null);
                 Prisoner prisoner2 = prisoners[j];
-                prisoner2.init();
+                prisoner2.setScore(0);
+                prisoner2.setLastPlay(null);
                 System.out.println("\n" + "Match " + match + ": " + prisoner1.getName() +
                     " vs. " + prisoner2.getName());
                 for (int trial = 0; trial < rounds; trial++)
@@ -99,7 +117,6 @@ public class Game
                 prisoner1.init();
                 Prisoner prisoner2 = prisoners[j];
                 prisoner2.init();
-                prisoner2.setLastPlay(null);
                 System.out.println("\n" + "Match " + match + ": " + prisoner1.getName() +
                     " vs. " + prisoner2.getName());
                 for (int trial = 0; trial < rounds; trial++)
