@@ -16,7 +16,7 @@ public class Game
     
     public Game()
     {
-        prisoners = new Prisoner[13];
+        prisoners = new Prisoner[14];
         myJudger = new Judger();
         scoreboard = new int[prisoners.length];
         
@@ -33,7 +33,7 @@ public class Game
         Prisoner noe = new Noe();
         Prisoner pabloMotos = new PabloMotos();
         Prisoner rokoBaturina = new RokoBaturina();
-        //Prisoner zacarias = new Zacarias();
+        Prisoner zacarias = new Zacarias();
 
         prisoners[0] = mySatan;
         prisoners[1] = myJesus;
@@ -48,7 +48,7 @@ public class Game
         prisoners[10] = noe;
         prisoners[11] = pabloMotos;
         prisoners[12] = rokoBaturina;
-        //prisoners[13] = zacarias;
+        prisoners[13] = zacarias;
 
 
 
