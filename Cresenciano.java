@@ -39,7 +39,7 @@ public class Cresenciano extends Prisoner{
     @Override
     void init() {
         super.init();
-        lastPlay = null;
+        vecesTraicionado = 0;
     }
 
 }
