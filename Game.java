@@ -27,7 +27,7 @@ public class Game
         Prisoner friedman = new Friedman();
         Prisoner fernando = new Fernando();
         Prisoner perroSanchez = new PerroSanchez();
-        Prisoner crescenciano = new Crescenciano();
+        Prisoner cresenciano = new Cresenciano();
         Prisoner manolo = new Manolo();
         Prisoner manu = new Manu();
         Prisoner noe = new Noe();
@@ -42,7 +42,7 @@ public class Game
         prisoners[4] = friedman;
         prisoners[5] = fernando;
         prisoners[6] = perroSanchez;
-        prisoners[7] = crescenciano;
+        prisoners[7] = cresenciano;
         prisoners[8] = manolo;
         prisoners[9] = manu;
         prisoners[10] = noe;
