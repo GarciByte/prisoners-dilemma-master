@@ -16,7 +16,7 @@ public class Game
     
     public Game()
     {
-        prisoners = new Prisoner[8];
+        prisoners = new Prisoner[13];
         myJudger = new Judger();
         scoreboard = new int[prisoners.length];
         
@@ -24,21 +24,33 @@ public class Game
         Prisoner myJesus = new Jesus();
         Prisoner myRandomizer = new Randomizer();
         Prisoner myTitForTat = new TitForTat();
-        Prisoner myTitForTatModified = new Fernando();
-        Prisoner myTitForTatModified2 = new Fernando();
         Prisoner friedman = new Friedman();
-
+        Prisoner fernando = new Fernando();
         Prisoner perroSanchez = new PerroSanchez();
+        Prisoner crescenciano = new Crescenciano();
+        Prisoner manolo = new Manolo();
+        Prisoner manu = new Manu();
+        Prisoner noe = new Noe();
+        Prisoner pabloMotos = new PabloMotos();
+        Prisoner rokoBaturina = new RokoBaturina();
+        //Prisoner zacarias = new Zacarias();
 
-
-        prisoners = new Prisoner[7];
         prisoners[0] = mySatan;
         prisoners[1] = myJesus;
         prisoners[2] = myRandomizer;
         prisoners[3] = myTitForTat;
-        prisoners[4] = myTitForTatModified;
-        prisoners[5] = myTitForTatModified2;
-        prisoners[6] = friedman;
+        prisoners[4] = friedman;
+        prisoners[5] = fernando;
+        prisoners[6] = perroSanchez;
+        prisoners[7] = crescenciano;
+        prisoners[8] = manolo;
+        prisoners[9] = manu;
+        prisoners[10] = noe;
+        prisoners[11] = pabloMotos;
+        prisoners[12] = rokoBaturina;
+        //prisoners[13] = zacarias;
+
+
 
     }
     
