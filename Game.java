@@ -16,7 +16,7 @@ public class Game
     
     public Game()
     {
-        prisoners = new Prisoner[7];
+        prisoners = new Prisoner[8];
         myJudger = new Judger();
         scoreboard = new int[prisoners.length];
         
@@ -27,7 +27,9 @@ public class Game
         Prisoner myTitForTatModified = new Fernando();
         Prisoner myTitForTatModified2 = new Fernando();
         Prisoner friedman = new Friedman();
-        prisoners = new Prisoner[7];
+        Prisoner cresenciano = new Crescenciano();
+
+        prisoners = new Prisoner[8];
         prisoners[0] = mySatan;
         prisoners[1] = myJesus;
         prisoners[2] = myRandomizer;
@@ -35,6 +37,8 @@ public class Game
         prisoners[4] = myTitForTatModified;
         prisoners[5] = myTitForTatModified2;
         prisoners[6] = friedman;
+        prisoners[7] = cresenciano;
+
     }
     
     public void cleanBoard()
