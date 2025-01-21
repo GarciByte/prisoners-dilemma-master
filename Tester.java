@@ -7,7 +7,7 @@ public class Tester
     public static void main(String[] args)
     {
         Game myGame = new Game();
-        //myGame.roundRobin(201);
+        myGame.roundRobin(201);
         myGame.giveDetails(201);
     }
 }
