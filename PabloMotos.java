@@ -7,7 +7,7 @@ public class PabloMotos extends Prisoner {
     public PabloMotos()
     {
         lastPlay = null;
-        name = "rosio gamba";
+        name = "Pablo Motos";
     }
 
     @Override
@@ -42,5 +42,11 @@ public class PabloMotos extends Prisoner {
         {
             return Choice.DEFECT;
         }
+    }
+
+    @Override
+    void init() {
+        super.init();
+        choices = new java.util.ArrayList<Choice>();
     }
 }
