@@ -8,6 +8,6 @@ public class Tester
     {
         Game myGame = new Game();
         //myGame.roundRobin(201);
-        myGame.giveDetails(5);
+        myGame.giveDetails(201);
     }
 }
