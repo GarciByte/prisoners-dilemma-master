@@ -29,7 +29,7 @@ public class Game
         Prisoner friedman = new Friedman();
         Prisoner cresenciano = new Crescenciano();
 
-        prisoners = new Prisoner[8];
+        prisoners = new Prisoner[7];
         prisoners[0] = mySatan;
         prisoners[1] = myJesus;
         prisoners[2] = myRandomizer;
@@ -37,7 +37,6 @@ public class Game
         prisoners[4] = myTitForTatModified;
         prisoners[5] = myTitForTatModified2;
         prisoners[6] = friedman;
-        prisoners[7] = cresenciano;
 
     }
     
