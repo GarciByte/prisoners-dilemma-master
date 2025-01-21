@@ -8,7 +8,7 @@ public class PerroSanchez extends Prisoner {
 
     public Choice makePlay(Choice oppLastPlay){
         Choice play = null;
-        
+
         if (oppLastPlay == null)
         {
             play = Choice.DEFECT;
@@ -31,5 +31,6 @@ public class PerroSanchez extends Prisoner {
         }
         return play;
     }
-    
+
 }
+
