@@ -25,7 +25,9 @@ public class Game
         Prisoner myRandomizer = new Randomizer();
         Prisoner myTitForTat = new TitForTat();
         Prisoner myTitForTatModified = new Fernando();
+        Prisoner myTitForTatModified2 = new Fernando();
         Prisoner friedman = new Friedman();
+
         Prisoner perroSanchez = new PerroSanchez();
 
 
@@ -35,9 +37,8 @@ public class Game
         prisoners[2] = myRandomizer;
         prisoners[3] = myTitForTat;
         prisoners[4] = myTitForTatModified;
-        prisoners[5] = perroSanchez;
+        prisoners[5] = myTitForTatModified2;
         prisoners[6] = friedman;
-
 
     }
     
@@ -60,9 +61,11 @@ public class Game
             for (int j = i+1; j < prisoners.length; j++)
             {
                 Prisoner prisoner1 = prisoners[i];
-                prisoner1.init();
+                prisoner1.setScore(0);
+                prisoner1.setLastPlay(null);
                 Prisoner prisoner2 = prisoners[j];
-                prisoner2.init();
+                prisoner2.setScore(0);
+                prisoner2.setLastPlay(null);
                 System.out.println("\n" + "Match " + match + ": " + prisoner1.getName() +
                     " vs. " + prisoner2.getName());
                 for (int trial = 0; trial < rounds; trial++)
@@ -102,7 +105,6 @@ public class Game
                 prisoner1.init();
                 Prisoner prisoner2 = prisoners[j];
                 prisoner2.init();
-                prisoner2.setLastPlay(null);
                 System.out.println("\n" + "Match " + match + ": " + prisoner1.getName() +
                     " vs. " + prisoner2.getName());
                 for (int trial = 0; trial < rounds; trial++)
