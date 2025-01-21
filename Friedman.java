@@ -35,7 +35,7 @@ public class Friedman extends Prisoner
             if (onceNoCooperation) {
                 play = Choice.DEFECT;
             } else {
-                play = Choice.DEFECT;
+                play = Choice.COOPERATE;
             }
         }
         return play;

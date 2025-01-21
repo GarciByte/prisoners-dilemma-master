@@ -56,11 +56,9 @@ public class Game
             for (int j = i+1; j < prisoners.length; j++)
             {
                 Prisoner prisoner1 = prisoners[i];
-                prisoner1.setScore(0);
-                prisoner1.setLastPlay(null);
+                prisoner1.init();
                 Prisoner prisoner2 = prisoners[j];
-                prisoner2.setScore(0);
-                prisoner2.setLastPlay(null);
+                prisoner2.init();
                 System.out.println("\n" + "Match " + match + ": " + prisoner1.getName() +
                     " vs. " + prisoner2.getName());
                 for (int trial = 0; trial < rounds; trial++)
@@ -100,6 +98,7 @@ public class Game
                 prisoner1.init();
                 Prisoner prisoner2 = prisoners[j];
                 prisoner2.init();
+                prisoner2.setLastPlay(null);
                 System.out.println("\n" + "Match " + match + ": " + prisoner1.getName() +
                     " vs. " + prisoner2.getName());
                 for (int trial = 0; trial < rounds; trial++)
