@@ -32,5 +32,10 @@ public class PerroSanchez extends Prisoner {
         return play;
     }
 
+    @Override
+    void init() {
+        super.init();
+        apoyo = null;
+    }
 }
 
